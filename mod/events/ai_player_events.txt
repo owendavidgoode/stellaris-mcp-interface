@@ -1,0 +1,77 @@
+namespace = ai_player
+
+# ═══════════════════════════════════════════════════════════════
+# Event 0: Initialization (fires on game start per country)
+# ═══════════════════════════════════════════════════════════════
+country_event = {
+	id = ai_player.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	immediate = {
+		set_country_flag = ai_player_active
+		log = "AI_INIT|\\[GetDate]|\\[This.GetName]|AI Player MCP Bridge initialized"
+	}
+}
+
+# ═══════════════════════════════════════════════════════════════
+# Event 1: Monthly State Dump (fires every month per country)
+# ═══════════════════════════════════════════════════════════════
+country_event = {
+	id = ai_player.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		has_country_flag = ai_player_active
+	}
+
+	immediate = {
+		# === SUMMARY ===
+		export_trigger_value_to_variable = {
+			trigger = num_owned_planets
+			variable = ai_num_planets
+		}
+		export_trigger_value_to_variable = {
+			trigger = num_pops
+			variable = ai_num_pops
+		}
+		export_trigger_value_to_variable = {
+			trigger = used_naval_capacity_integer
+			variable = ai_navy_used
+		}
+		export_trigger_value_to_variable = {
+			trigger = naval_capacity
+			variable = ai_navy_cap
+		}
+		export_trigger_value_to_variable = {
+			trigger = military_power
+			variable = ai_mil_power
+		}
+
+		log = "AI_SUMMARY|\\[GetDate]|\\[This.GetName]|\\[This.ai_num_planets]|\\[This.ai_num_pops]|\\[This.ai_navy_used]|\\[This.ai_navy_cap]|\\[This.ai_mil_power]"
+
+		# === RESOURCES ===
+		ai_player_dump_resources = yes
+
+		# === PLANETS ===
+		ai_player_dump_planets = yes
+
+		# === FLEETS ===
+		ai_player_dump_fleets = yes
+
+		# === DIPLOMACY ===
+		ai_player_dump_diplomacy = yes
+
+		# === TECH ===
+		ai_player_dump_tech = yes
+
+		# === END MARKER ===
+		log = "AI_STATE_END|\\[GetDate]"
+	}
+}

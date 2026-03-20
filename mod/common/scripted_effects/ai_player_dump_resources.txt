@@ -1,0 +1,158 @@
+# AI Player MCP Bridge - Resource Dump
+# Exports all resource stockpiles and income to game.log
+
+ai_player_dump_resources = {
+	# Energy
+	export_resource_stockpile_to_variable = {
+		resource = energy
+		variable = ai_res_energy_s
+	}
+	export_resource_income_to_variable = {
+		resource = energy
+		variable = ai_res_energy_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|energy|\\[This.ai_res_energy_s]|\\[This.ai_res_energy_i]"
+
+	# Minerals
+	export_resource_stockpile_to_variable = {
+		resource = minerals
+		variable = ai_res_minerals_s
+	}
+	export_resource_income_to_variable = {
+		resource = minerals
+		variable = ai_res_minerals_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|minerals|\\[This.ai_res_minerals_s]|\\[This.ai_res_minerals_i]"
+
+	# Food
+	export_resource_stockpile_to_variable = {
+		resource = food
+		variable = ai_res_food_s
+	}
+	export_resource_income_to_variable = {
+		resource = food
+		variable = ai_res_food_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|food|\\[This.ai_res_food_s]|\\[This.ai_res_food_i]"
+
+	# Consumer Goods
+	export_resource_stockpile_to_variable = {
+		resource = consumer_goods
+		variable = ai_res_cg_s
+	}
+	export_resource_income_to_variable = {
+		resource = consumer_goods
+		variable = ai_res_cg_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|consumer_goods|\\[This.ai_res_cg_s]|\\[This.ai_res_cg_i]"
+
+	# Alloys
+	export_resource_stockpile_to_variable = {
+		resource = alloys
+		variable = ai_res_alloys_s
+	}
+	export_resource_income_to_variable = {
+		resource = alloys
+		variable = ai_res_alloys_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|alloys|\\[This.ai_res_alloys_s]|\\[This.ai_res_alloys_i]"
+
+	# Influence
+	export_resource_stockpile_to_variable = {
+		resource = influence
+		variable = ai_res_influence_s
+	}
+	export_resource_income_to_variable = {
+		resource = influence
+		variable = ai_res_influence_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|influence|\\[This.ai_res_influence_s]|\\[This.ai_res_influence_i]"
+
+	# Unity
+	export_resource_stockpile_to_variable = {
+		resource = unity
+		variable = ai_res_unity_s
+	}
+	export_resource_income_to_variable = {
+		resource = unity
+		variable = ai_res_unity_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|unity|\\[This.ai_res_unity_s]|\\[This.ai_res_unity_i]"
+
+	# Volatile Motes
+	export_resource_stockpile_to_variable = {
+		resource = volatile_motes
+		variable = ai_res_motes_s
+	}
+	export_resource_income_to_variable = {
+		resource = volatile_motes
+		variable = ai_res_motes_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|volatile_motes|\\[This.ai_res_motes_s]|\\[This.ai_res_motes_i]"
+
+	# Exotic Gases
+	export_resource_stockpile_to_variable = {
+		resource = exotic_gases
+		variable = ai_res_gases_s
+	}
+	export_resource_income_to_variable = {
+		resource = exotic_gases
+		variable = ai_res_gases_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|exotic_gases|\\[This.ai_res_gases_s]|\\[This.ai_res_gases_i]"
+
+	# Rare Crystals
+	export_resource_stockpile_to_variable = {
+		resource = rare_crystals
+		variable = ai_res_crystals_s
+	}
+	export_resource_income_to_variable = {
+		resource = rare_crystals
+		variable = ai_res_crystals_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|rare_crystals|\\[This.ai_res_crystals_s]|\\[This.ai_res_crystals_i]"
+
+	# Dark Matter
+	export_resource_stockpile_to_variable = {
+		resource = sr_dark_matter
+		variable = ai_res_dm_s
+	}
+	export_resource_income_to_variable = {
+		resource = sr_dark_matter
+		variable = ai_res_dm_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|dark_matter|\\[This.ai_res_dm_s]|\\[This.ai_res_dm_i]"
+
+	# Living Metal
+	export_resource_stockpile_to_variable = {
+		resource = sr_living_metal
+		variable = ai_res_lm_s
+	}
+	export_resource_income_to_variable = {
+		resource = sr_living_metal
+		variable = ai_res_lm_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|living_metal|\\[This.ai_res_lm_s]|\\[This.ai_res_lm_i]"
+
+	# Zro
+	export_resource_stockpile_to_variable = {
+		resource = sr_zro
+		variable = ai_res_zro_s
+	}
+	export_resource_income_to_variable = {
+		resource = sr_zro
+		variable = ai_res_zro_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|zro|\\[This.ai_res_zro_s]|\\[This.ai_res_zro_i]"
+
+	# Minor Artifacts
+	export_resource_stockpile_to_variable = {
+		resource = minor_artifacts
+		variable = ai_res_artifacts_s
+	}
+	export_resource_income_to_variable = {
+		resource = minor_artifacts
+		variable = ai_res_artifacts_i
+	}
+	log = "AI_RESOURCES|\\[GetDate]|minor_artifacts|\\[This.ai_res_artifacts_s]|\\[This.ai_res_artifacts_i]"
+}

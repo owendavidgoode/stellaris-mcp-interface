@@ -1,0 +1,14 @@
+# AI Player MCP Bridge - On Actions
+# Hooks into monthly pulse to dump game state to game.log
+
+on_game_start_country = {
+	events = {
+		ai_player.0		# Initialize AI Player bridge
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		ai_player.1		# Monthly state dump
+	}
+}

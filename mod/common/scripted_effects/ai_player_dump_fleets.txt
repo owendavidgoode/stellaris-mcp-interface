@@ -1,0 +1,21 @@
+# AI Player MCP Bridge - Fleet Dump
+# Exports owned fleet data to game.log
+
+ai_player_dump_fleets = {
+	every_owned_fleet = {
+		limit = {
+			is_mobile = yes
+		}
+
+		export_trigger_value_to_variable = {
+			trigger = fleet_size
+			variable = ai_fl_ships
+		}
+		export_trigger_value_to_variable = {
+			trigger = fleet_power
+			variable = ai_fl_power
+		}
+
+		log = "AI_FLEET|\\[This.GetName]|\\[This.ai_fl_ships]|\\[This.ai_fl_power]|\\[This.fleet_mia]"
+	}
+}

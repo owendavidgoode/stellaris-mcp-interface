@@ -1,0 +1,32 @@
+{
+  "name": "stellaris-mcp",
+  "version": "0.1.0",
+  "description": "MCP Server for AI interaction with Stellaris",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "stellaris-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test:parser": "tsx src/parser/test-parser.ts"
+  },
+  "keywords": ["stellaris", "mcp", "ai"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "adm-zip": "^0.5.16",
+    "chokidar": "^5.0.0",
+    "jomini": "^0.10.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.8",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

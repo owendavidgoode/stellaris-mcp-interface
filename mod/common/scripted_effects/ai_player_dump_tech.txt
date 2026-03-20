@@ -1,0 +1,19 @@
+# AI Player MCP Bridge - Technology Dump
+# Exports research output to game.log
+
+ai_player_dump_tech = {
+	export_resource_income_to_variable = {
+		resource = physics_research
+		variable = ai_tech_physics
+	}
+	export_resource_income_to_variable = {
+		resource = society_research
+		variable = ai_tech_society
+	}
+	export_resource_income_to_variable = {
+		resource = engineering_research
+		variable = ai_tech_engineering
+	}
+
+	log = "AI_TECH_OUTPUT|\\[GetDate]|\\[This.ai_tech_physics]|\\[This.ai_tech_society]|\\[This.ai_tech_engineering]"
+}

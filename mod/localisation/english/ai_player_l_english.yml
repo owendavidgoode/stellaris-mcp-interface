@@ -1,0 +1,3 @@
+l_english:
+ ai_player_mod_name:0 "AI Player MCP Bridge"
+ ai_player_mod_desc:0 "Bridges Stellaris game state to an external MCP server for AI interaction."
