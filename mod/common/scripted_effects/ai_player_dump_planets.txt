@@ -4,7 +4,11 @@
 ai_player_dump_planets = {
 	every_owned_planet = {
 		export_trigger_value_to_variable = {
-			trigger = num_pops
+			trigger = count_owned_pop_amount
+			parameters = {
+				count = all
+				limit = { }
+			}
 			variable = ai_pl_pops
 		}
 		export_trigger_value_to_variable = {
@@ -16,7 +20,7 @@ ai_player_dump_planets = {
 			variable = ai_pl_stability
 		}
 		export_trigger_value_to_variable = {
-			trigger = planet_amenities
+			trigger = free_amenities
 			variable = ai_pl_amenities
 		}
 		export_trigger_value_to_variable = {
@@ -33,10 +37,18 @@ ai_player_dump_planets = {
 		}
 		export_trigger_value_to_variable = {
 			trigger = num_buildings
+			parameters = {
+				type = any
+				value = 0
+			}
 			variable = ai_pl_buildings
 		}
 		export_trigger_value_to_variable = {
 			trigger = num_districts
+			parameters = {
+				type = any
+				value = 0
+			}
 			variable = ai_pl_districts
 		}
 

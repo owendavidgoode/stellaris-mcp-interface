@@ -38,7 +38,11 @@ country_event = {
 			variable = ai_num_planets
 		}
 		export_trigger_value_to_variable = {
-			trigger = num_pops
+			trigger = count_owned_pop_amount
+			parameters = {
+				count = all
+				limit = { }
+			}
 			variable = ai_num_pops
 		}
 		export_trigger_value_to_variable = {
@@ -46,11 +50,11 @@ country_event = {
 			variable = ai_navy_used
 		}
 		export_trigger_value_to_variable = {
-			trigger = naval_capacity
+			trigger = max_naval_capacity
 			variable = ai_navy_cap
 		}
 		export_trigger_value_to_variable = {
-			trigger = military_power
+			trigger = fleet_power
 			variable = ai_mil_power
 		}
 
